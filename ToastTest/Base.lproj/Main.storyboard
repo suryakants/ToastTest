@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToastTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTJ-3h-vhA">
+                                <rect key="frame" x="239" y="285" width="123" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="w06-QS-nZn"/>
+                                </constraints>
+                                <state key="normal" title="lets Taost again"/>
+                                <connections>
+                                    <action selector="letsShowToastAgain" destination="BYZ-38-t0r" eventType="touchUpInside" id="QSL-MW-br9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M3o-O0-TlC">
+                                <rect key="frame" x="121" y="175" width="356" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bnJ-6s-sz4"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiL-Yn-Epj">
+                                <rect key="frame" x="267" y="97" width="67" height="30"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="lets Taost"/>
+                                <connections>
+                                    <action selector="letsShowToast" destination="BYZ-38-t0r" eventType="touchUpInside" id="iox-kv-8Wc"/>
+                                    <outletCollection property="gestureRecognizers" destination="Oza-fz-4Ls" appends="YES" id="crl-MI-7by"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="M3o-O0-TlC" secondAttribute="trailing" constant="103" id="9pj-NI-Lhi"/>
+                            <constraint firstItem="kTJ-3h-vhA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EYJ-DX-Kqy"/>
+                            <constraint firstItem="KiL-Yn-Epj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="247" id="Fer-Oh-Mt6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KiL-Yn-Epj" secondAttribute="trailing" constant="246" id="Hbz-fD-ybC"/>
+                            <constraint firstItem="M3o-O0-TlC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="155" id="cNw-Dq-5Xr"/>
+                            <constraint firstItem="M3o-O0-TlC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="101" id="ccx-j0-EJb"/>
+                            <constraint firstItem="KiL-Yn-Epj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gqM-CE-KCz"/>
+                            <constraint firstItem="kTJ-3h-vhA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kJu-v9-TeX"/>
+                            <constraint firstItem="KiL-Yn-Epj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="77" id="tnz-qu-tJV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="M3o-O0-TlC" id="XWB-H7-5HG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Oza-fz-4Ls">
+                    <connections>
+                        <action selector="longPresslongPressed:" destination="BYZ-38-t0r" id="cPd-dd-Bqf"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="564" y="-361"/>
+        </scene>
+        <!--Custom Toast View Controller-->
+        <scene sceneID="tm6-Ds-68X">
+            <objects>
+                <viewController storyboardIdentifier="CustomToastViewController" id="Vik-hN-rj5" customClass="CustomToastViewController" customModule="ToastTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NBY-Oq-l7s"/>
+                        <viewControllerLayoutGuide type="bottom" id="4or-Hm-BGA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Udx-wo-duA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKl-5F-I8I">
+                                <rect key="frame" x="30" y="513" width="540" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKm-Pc-mgr">
+                                        <rect key="frame" x="8" y="8" width="524" height="29"/>
+                                        <string key="text">The application's data has been remotely wiped. Please launch the browser again or contact your IT administrator for further information.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BKm-Pc-mgr" firstAttribute="leading" secondItem="PKl-5F-I8I" secondAttribute="leading" constant="8" id="IdM-Sk-Uco"/>
+                                    <constraint firstAttribute="trailing" secondItem="BKm-Pc-mgr" secondAttribute="trailing" constant="8" id="fjI-RW-HIP"/>
+                                    <constraint firstAttribute="bottom" secondItem="BKm-Pc-mgr" secondAttribute="bottom" constant="8" id="vrM-1B-cqn"/>
+                                    <constraint firstItem="BKm-Pc-mgr" firstAttribute="top" secondItem="PKl-5F-I8I" secondAttribute="top" constant="8" id="yG8-3R-wC0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PKl-5F-I8I" firstAttribute="leading" secondItem="Udx-wo-duA" secondAttribute="leading" constant="30" id="6NO-5Y-nE9">
+                                <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="PKl-5F-I8I" firstAttribute="centerX" secondItem="Udx-wo-duA" secondAttribute="centerX" id="FEK-YJ-q93"/>
+                            <constraint firstItem="4or-Hm-BGA" firstAttribute="top" secondItem="PKl-5F-I8I" secondAttribute="bottom" constant="42" id="bt8-Ng-8uM"/>
+                            <constraint firstAttribute="trailing" secondItem="PKl-5F-I8I" secondAttribute="trailing" constant="30" id="eZN-7i-2oD">
+                                <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leadingCon" destination="6NO-5Y-nE9" id="foh-y5-NAM"/>
+                        <outlet property="sbToastMessage" destination="BKm-Pc-mgr" id="sF8-Zv-lBZ"/>
+                        <outlet property="sbToastView" destination="PKl-5F-I8I" id="9YO-ri-lgW"/>
+                        <outlet property="traillingCon" destination="eZN-7i-2oD" id="dG6-8y-Rk8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OuY-yy-Qcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="331"/>
+        </scene>
+    </scenes>
+</document>

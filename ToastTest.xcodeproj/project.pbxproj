@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A1D98591D1C0E2600B52B6E /* JLToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D98581D1C0E2600B52B6E /* JLToastWindow.swift */; };
+		7A1E87CF1D0ABAD000AEF9AD /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1E87CE1D0ABAD000AEF9AD /* ToastManager.swift */; };
+		7ABC39D21D0856880009AA70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC39D11D0856880009AA70 /* AppDelegate.swift */; };
+		7ABC39D41D0856880009AA70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC39D31D0856880009AA70 /* ViewController.swift */; };
+		7ABC39D71D0856880009AA70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC39D51D0856880009AA70 /* Main.storyboard */; };
+		7ABC39D91D0856880009AA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC39D81D0856880009AA70 /* Assets.xcassets */; };
+		7ABC39DC1D0856880009AA70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC39DA1D0856880009AA70 /* LaunchScreen.storyboard */; };
+		7ABC39E41D0856A90009AA70 /* LetsToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC39E31D0856A90009AA70 /* LetsToast.swift */; };
+		7ABC39E61D085C690009AA70 /* CustomToastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC39E51D085C690009AA70 /* CustomToastViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A1D98581D1C0E2600B52B6E /* JLToastWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToastWindow.swift; sourceTree = "<group>"; };
+		7A1E87CE1D0ABAD000AEF9AD /* ToastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
+		7ABC39CE1D0856880009AA70 /* ToastTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToastTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABC39D11D0856880009AA70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7ABC39D31D0856880009AA70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7ABC39D61D0856880009AA70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7ABC39D81D0856880009AA70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7ABC39DB1D0856880009AA70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7ABC39DD1D0856880009AA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABC39E31D0856A90009AA70 /* LetsToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsToast.swift; sourceTree = "<group>"; };
+		7ABC39E51D085C690009AA70 /* CustomToastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToastViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ABC39CB1D0856880009AA70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ABC39C51D0856880009AA70 = {
+			isa = PBXGroup;
+			children = (
+				7ABC39D01D0856880009AA70 /* ToastTest */,
+				7ABC39CF1D0856880009AA70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7ABC39CF1D0856880009AA70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ABC39CE1D0856880009AA70 /* ToastTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ABC39D01D0856880009AA70 /* ToastTest */ = {
+			isa = PBXGroup;
+			children = (
+				7A1D98581D1C0E2600B52B6E /* JLToastWindow.swift */,
+				7ABC39D11D0856880009AA70 /* AppDelegate.swift */,
+				7ABC39E51D085C690009AA70 /* CustomToastViewController.swift */,
+				7A1E87CE1D0ABAD000AEF9AD /* ToastManager.swift */,
+				7ABC39D31D0856880009AA70 /* ViewController.swift */,
+				7ABC39D51D0856880009AA70 /* Main.storyboard */,
+				7ABC39D81D0856880009AA70 /* Assets.xcassets */,
+				7ABC39DA1D0856880009AA70 /* LaunchScreen.storyboard */,
+				7ABC39DD1D0856880009AA70 /* Info.plist */,
+				7ABC39E31D0856A90009AA70 /* LetsToast.swift */,
+			);
+			path = ToastTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7ABC39CD1D0856880009AA70 /* ToastTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ABC39E01D0856880009AA70 /* Build configuration list for PBXNativeTarget "ToastTest" */;
+			buildPhases = (
+				7ABC39CA1D0856880009AA70 /* Sources */,
+				7ABC39CB1D0856880009AA70 /* Frameworks */,
+				7ABC39CC1D0856880009AA70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToastTest;
+			productName = ToastTest;
+			productReference = 7ABC39CE1D0856880009AA70 /* ToastTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ABC39C61D0856880009AA70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Suryakant Sharma";
+				TargetAttributes = {
+					7ABC39CD1D0856880009AA70 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7ABC39C91D0856880009AA70 /* Build configuration list for PBXProject "ToastTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7ABC39C51D0856880009AA70;
+			productRefGroup = 7ABC39CF1D0856880009AA70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7ABC39CD1D0856880009AA70 /* ToastTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ABC39CC1D0856880009AA70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABC39DC1D0856880009AA70 /* LaunchScreen.storyboard in Resources */,
+				7ABC39D91D0856880009AA70 /* Assets.xcassets in Resources */,
+				7ABC39D71D0856880009AA70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ABC39CA1D0856880009AA70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1E87CF1D0ABAD000AEF9AD /* ToastManager.swift in Sources */,
+				7ABC39D41D0856880009AA70 /* ViewController.swift in Sources */,
+				7ABC39E41D0856A90009AA70 /* LetsToast.swift in Sources */,
+				7A1D98591D1C0E2600B52B6E /* JLToastWindow.swift in Sources */,
+				7ABC39E61D085C690009AA70 /* CustomToastViewController.swift in Sources */,
+				7ABC39D21D0856880009AA70 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7ABC39D51D0856880009AA70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ABC39D61D0856880009AA70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7ABC39DA1D0856880009AA70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ABC39DB1D0856880009AA70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7ABC39DE1D0856880009AA70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7ABC39DF1D0856880009AA70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7ABC39E11D0856880009AA70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ToastTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Soti.ToastTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7ABC39E21D0856880009AA70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ToastTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Soti.ToastTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ABC39C91D0856880009AA70 /* Build configuration list for PBXProject "ToastTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ABC39DE1D0856880009AA70 /* Debug */,
+				7ABC39DF1D0856880009AA70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ABC39E01D0856880009AA70 /* Build configuration list for PBXNativeTarget "ToastTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ABC39E11D0856880009AA70 /* Debug */,
+				7ABC39E21D0856880009AA70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7ABC39C61D0856880009AA70 /* Project object */;
+}
